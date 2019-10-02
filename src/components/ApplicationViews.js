@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom"
 import Register from "./auth/Register"
 import Login from "./auth/Login"
 import ParkExplorer from "./home/ParkExplorer"
+import MyItinerary from "./home/myitinerary"
 
 
 const ApplicationViews = () => {
@@ -51,12 +52,9 @@ const ApplicationViews = () => {
             />
 
             <Route
-                path="/itinerary" render={props => {
+                path="/myitinerary" render={props => {
                     return (
-                        <>
-                            <h1>Itinerary</h1>
-                            <img className="swings" src={require('./home/swings.jpeg')} alt="My Dog" />
-                        </>
+                       <MyItinerary/>
                     )
                 }}
             />
